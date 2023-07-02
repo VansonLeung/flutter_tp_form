@@ -1,15 +1,15 @@
 # tp_form
 
-A new Flutter plugin project.
+An example of customizing and encapsulating my tp_form
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+1. Download
+2. Run "example" project inside the folder "example" in iOS or Android
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
+## Objectives
+
+1. Make form input logic consistent and reuseable
+2. Make form input decoration / style more consistent
+3. Make the implementation code clean and easy to use
