@@ -27,7 +27,7 @@ https://github.com/VansonLeung/flutter_tp_form/assets/1129695/47d9f8cd-753c-4b99
 
 ## Simple usage
 
-```
+```dart
 
 import 'package:flutter/material.dart';
 import 'package:tp_form_example/fragments/sections/SampleForm1QuestionnaireSection.dart';
