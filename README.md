@@ -56,8 +56,6 @@ class _SampleForm1PageState extends State<SampleForm1Page> {
   List<FormItemElement> formItemList1 = [];
   List<FormItemElement> formItemList2 = [];
 
-  SampleForm1QuestionnaireSectionState? authRegisterQuestionnaireSectionState;
-
   bool isBusy = false;
 
   @override
@@ -174,11 +172,6 @@ class _SampleForm1PageState extends State<SampleForm1Page> {
       });
 
 
-      var questionnaireDict = {};
-      if (authRegisterQuestionnaireSectionState != null) {
-        questionnaireDict = authRegisterQuestionnaireSectionState?.doSummarizeQuestionnaire() ?? {};
-      }
-
       print({
         "phone_country": fse_phoneNumber.tv_phoneCountry.value,
         "phone_number": fse_phoneNumber.text.trim(),
@@ -187,11 +180,6 @@ class _SampleForm1PageState extends State<SampleForm1Page> {
         "age_range": fse_age_range.tv_any.value,
         "gender": fse_gender.tv_any.value,
         "email": fse_email.text.trim(),
-        "q1": (questionnaireDict.containsKey("q1") ? questionnaireDict["q1"] : ""),
-        "q2": (questionnaireDict.containsKey("q2") ? questionnaireDict["q2"] : ""),
-        "q3": (questionnaireDict.containsKey("q3") ? questionnaireDict["q3"] : ""),
-        "q4": (questionnaireDict.containsKey("q4") ? questionnaireDict["q4"] : ""),
-        "q5": (questionnaireDict.containsKey("q5") ? questionnaireDict["q5"] : ""),
       });
 
       Future.delayed(Duration(milliseconds: 1000), () {
@@ -234,15 +222,6 @@ class _SampleForm1PageState extends State<SampleForm1Page> {
                 }).toList(),
 
                 SizedBox(height: 40),
-
-
-                SampleForm1QuestionnaireSection(
-                    onInit: (state) {
-                      setState(() {
-                        authRegisterQuestionnaireSectionState = state;
-                      });
-                    }
-                ),
 
 
                 Container(
