@@ -19,13 +19,13 @@ class TPFormElementContainer extends StatelessWidget {
       decoration: BoxDecoration(
           boxShadow: isFocused == true ? [
             const BoxShadow(
-              color: Color(0xff579cfcb),
+              color: Color(0xff808080),
               spreadRadius: 2,
               blurRadius: 2,
               offset: Offset(0, 0),
             ),
           ] : null,
-          color: const Color(0xff11052d),
+          color: const Color(0xffe0e0e0),
           borderRadius: BorderRadiusDirectional.only(
             topStart: ( (grouped == true && firstInGroup != true) )
                 ? Radius.circular(0) : Radius.circular(10),
@@ -37,7 +37,7 @@ class TPFormElementContainer extends StatelessWidget {
                 ? Radius.circular(0) : Radius.circular(10),
           ),
           border: Border.all(
-            color: const Color(0xffffffff),
+            color: const Color(0xff404040),
             width: 1,
           )
       ),

@@ -119,7 +119,7 @@ class _TPMultipleSelectInputBarState extends State<TPMultipleSelectInputBar> wit
                     ),
                     ),
 
-                    Icon(Icons.arrow_drop_down, color: Color(0xFFFFFFFF)),
+                    Icon(Icons.arrow_drop_down, color: Color(0xFF0000dd)),
 
                   ]
               ),

@@ -96,9 +96,9 @@ class _TPTextInputBarState extends State<TPTextInputBar> with SingleTickerProvid
             autofocus: widget.autofocus ?? false,
             focusNode: focusNode,
             style: TextStyle(
-              color: Color(0xFFFFFFFF),
+              color: Color(0xFF0000dd),
             ),
-            cursorColor: Color(0xFFFFFFFF),
+            cursorColor: Color(0xFF0000dd),
             controller: widget.controller,
             decoration: InputDecoration(
               suffixIcon: Stack(
@@ -110,7 +110,7 @@ class _TPTextInputBarState extends State<TPTextInputBar> with SingleTickerProvid
                           isForceNonObscure = !isForceNonObscure;
                         });
                       },
-                      icon: Icon(isForceNonObscure ? Icons.remove_red_eye_outlined : Icons.remove_red_eye, color: Color(0xFFFFFFFF),),
+                      icon: Icon(isForceNonObscure ? Icons.remove_red_eye_outlined : Icons.remove_red_eye, color: Color(0xFF0000dd),),
                     ),
 
                   if (widget.isSupportClearText == true
@@ -119,7 +119,7 @@ class _TPTextInputBarState extends State<TPTextInputBar> with SingleTickerProvid
                       onPressed: () {
                         widget.onFieldCleared!();
                       },
-                      icon: Icon(Icons.clear, color: Color(0xFFFFFFFF),),
+                      icon: Icon(Icons.clear, color: Color(0xFF0000dd),),
                     ),
                 ],
               ),
@@ -133,14 +133,14 @@ class _TPTextInputBarState extends State<TPTextInputBar> with SingleTickerProvid
               errorMaxLines: 5,
               errorText: widget.errorText?.isEmpty == true ? null : widget.errorText,
               errorStyle: TextStyle(
-                color: Colors.yellowAccent,
+                color: Colors.redAccent,
               ),
               contentPadding: EdgeInsets.fromLTRB(0.0, 15.0, 0.0, 15.0),
 
 
               hintText: widget.hintText,
               hintStyle: TextStyle(
-                color: Color(0xff579cfcb),
+                color: Color(0xff888888),
               ),
             ),
           ),

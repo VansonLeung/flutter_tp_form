@@ -129,9 +129,9 @@ class _TPPhoneNumberInputBarState extends State<TPPhoneNumberInputBar> with Sing
             focusNode: focusNode,
             textAlignVertical: TextAlignVertical.center,
             style: TextStyle(
-              color: Color(0xFFFFFFFF),
+              color: Color(0xFF0000dd),
             ),
-            cursorColor: Color(0xFFFFFFFF),
+            cursorColor: Color(0xFF0000dd),
             controller: widget.controller,
             decoration: InputDecoration(
               suffixIcon: Stack(
@@ -142,7 +142,7 @@ class _TPPhoneNumberInputBarState extends State<TPPhoneNumberInputBar> with Sing
                       onPressed: () {
                         widget.onFieldCleared!();
                       },
-                      icon: Icon(Icons.clear, color: Color(0xFFFFFFFF),),
+                      icon: Icon(Icons.clear, color: Color(0xFF0000dd),),
                     ),
                 ],
               ),
@@ -156,7 +156,7 @@ class _TPPhoneNumberInputBarState extends State<TPPhoneNumberInputBar> with Sing
 
               errorText: widget.errorText?.isEmpty == true ? null : widget.errorText,
               errorStyle: TextStyle(
-                color: Colors.yellowAccent,
+                color: Colors.redAccent,
               ),
               contentPadding: EdgeInsets.fromLTRB(0.0, 15.0, 0.0, 15.0),
 
@@ -164,7 +164,7 @@ class _TPPhoneNumberInputBarState extends State<TPPhoneNumberInputBar> with Sing
 
               hintText: widget.hintText,
               hintStyle: TextStyle(
-                color: Color(0xff579cfcb),
+                color: Color(0xff888888),
               ),
             ),
           ),
