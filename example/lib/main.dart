@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:tp_form/tp_form.dart';
+import 'package:tp_form_example/pages/SampleForm1Page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -52,11 +53,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('TPForm example'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
-        ),
+        body: SampleForm1Page(),
       ),
     );
   }
