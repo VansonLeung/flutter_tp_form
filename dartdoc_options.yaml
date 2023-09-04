@@ -1,0 +1,9 @@
+dartdoc:
+  nodoc: [
+    'lib/main.dart',
+    'lib/helpers/*.dart',
+    'lib/pages/*.dart',
+    'lib/fragments/sections/*.dart',
+    'lib/fragments/generic/*.dart',
+    'lib/components/generic/*.dart',
+  ]
